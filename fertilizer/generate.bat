@@ -1,0 +1,1 @@
+protoc .\fertilizerpb\fertilizer.proto --go_out=plugins=grpc:.

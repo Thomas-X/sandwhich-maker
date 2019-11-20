@@ -1,0 +1,1 @@
+protoc .\toppingspb\toppings.proto --go_out=plugins=grpc:.

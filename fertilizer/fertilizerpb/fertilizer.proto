@@ -1,0 +1,15 @@
+syntax="proto3";
+package fertilizer;
+option go_package="fertilizerpb";
+
+service FertilizerService {
+    rpc GetFertilizer (GetFertilizerRequest) returns (GetFertilizerResponse) {}
+}
+
+message GetFertilizerRequest {
+    int32 amount = 1;
+}
+
+message GetFertilizerResponse {
+    int32 price = 1;
+}

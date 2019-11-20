@@ -1,0 +1,20 @@
+syntax="proto3";
+package lettucefarmer;
+option go_package="lettucefarmerpb";
+
+service LettuceService {
+    rpc GetLettuce (GetLettuceRequest) returns (GetLettuceResponse) {}
+}
+
+message GetLettuceRequest {
+    repeated string lettuces = 1;
+}
+
+message Lettuce {
+    string name = 1;
+    int32 price = 2;
+}
+
+message GetLettuceResponse {
+    repeated Lettuce lettuces = 1;
+}

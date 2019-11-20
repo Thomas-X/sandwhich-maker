@@ -1,0 +1,1 @@
+protoc .\tomatopb\tomato.proto --go_out=plugins=grpc:.

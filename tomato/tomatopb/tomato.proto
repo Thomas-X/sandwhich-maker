@@ -1,0 +1,20 @@
+syntax="proto3";
+package tomato;
+option go_package="tomatopb";
+
+service TomatoService {
+    rpc GetTomato (GetTomatoRequest) returns (GetTomatoResponse) {}
+}
+
+message GetTomatoRequest {
+    repeated string tomatoes = 1;
+}
+
+message Tomato {
+    string name = 1;
+    int32 price = 2;
+}
+
+message GetTomatoResponse {
+    repeated Tomato tomatoes = 1;
+}

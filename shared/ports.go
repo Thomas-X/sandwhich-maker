@@ -1,0 +1,14 @@
+package shared
+
+const (
+	SANDWHICH_PORT int = iota
+	BAKER_PORT
+	TOPPING_PORT
+	MOONSEED_PORT
+	GRAIN_PORT
+	LETTUCE_PORT
+	TOMATO_PORT
+	FERTILIZER_PORT
+	// since node can't use this const
+	BUTCHER_PORT = 6050
+)

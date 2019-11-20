@@ -1,0 +1,15 @@
+syntax = "proto3";
+package grainfarmer;
+option go_package="grainfarmerpb";
+
+service GrainFarmerService {
+    rpc GetGrain(GetGrainRequest) returns (GetGrainResponse);
+}
+
+message GetGrainRequest {
+    string breadName = 1;
+}
+message GetGrainResponse {
+    int32 grain = 1;
+    int32 price = 2;
+}

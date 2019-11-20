@@ -1,0 +1,1 @@
+protoc .\lettucefarmerpb\lettucefarmer.proto --go_out=plugins=grpc:.

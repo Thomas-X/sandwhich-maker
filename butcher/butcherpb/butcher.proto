@@ -1,0 +1,15 @@
+syntax="proto3";
+package butcher;
+
+service ButcherService {
+    rpc GetMeat(GetMeatRequest ) returns (GetMeatResponse) {}
+}
+
+message GetMeatRequest {
+    string name = 1;
+}
+
+message GetMeatResponse {
+    string name = 1;
+    int32 price = 2;
+}

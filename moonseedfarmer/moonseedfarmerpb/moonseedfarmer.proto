@@ -1,0 +1,14 @@
+syntax = "proto3";
+package moonseedfarmer;
+option go_package="moonseedfarmerpb";
+
+service MoonSeedFarmerService {
+    rpc GetMoonSeed(GetMoonSeedRequest) returns (GetMoonSeedResponse);
+}
+
+message GetMoonSeedRequest {
+    string breadName = 1;
+}
+message GetMoonSeedResponse {
+    int32 price = 1;
+}

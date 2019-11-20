@@ -1,0 +1,35 @@
+syntax = "proto3";
+package toppings;
+option go_package = "toppingspb";
+
+service ToppingService {
+    rpc ProvideTopping (ProvideToppingRequest) returns (ProvideToppingResponse) {
+    }
+}
+
+message ProvideToppingRequest {
+    repeated string meats = 1;
+    repeated string lettuces = 2;
+    repeated string tomatoes = 3;
+}
+
+message Meat {
+    string name = 1;
+    int32 price = 2;
+}
+
+message Lettuce {
+    string name = 1;
+    int32 price = 2;
+}
+
+message Tomato {
+    string name = 1;
+    int32 price = 2;
+}
+
+message ProvideToppingResponse {
+    repeated Meat meats = 1;
+    repeated Lettuce lettuces = 2;
+    repeated Tomato tomatoes = 3;
+}

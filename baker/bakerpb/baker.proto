@@ -1,0 +1,22 @@
+syntax="proto3";
+package baker;
+option go_package="bakerpb";
+
+service BakerService {
+    rpc GetBread(GetBreadRequest) returns (GetBreadResponse);
+}
+
+message Bread {
+    string name = 1;
+    int32 amount = 2;
+    int32 price = 3;
+    int32 grainUsed = 4;
+}
+
+message GetBreadRequest {
+    string name = 1;
+    int32 amount = 2;
+}
+message GetBreadResponse {
+    Bread bread = 1;
+}
