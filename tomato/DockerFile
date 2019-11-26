@@ -1,0 +1,7 @@
+FROM golang:1.13.4-alpine3.10
+COPY ../../../ /go/src
+COPY . /code
+WORKDIR /code
+RUN go get -d ./...
+RUN ls -al /code
+CMD ["go", "run", "main.go"]

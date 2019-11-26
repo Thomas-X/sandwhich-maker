@@ -1,14 +1,13 @@
 package shared
 
 const (
-	SANDWHICH_PORT int = iota
-	BAKER_PORT
-	TOPPING_PORT
-	MOONSEED_PORT
-	GRAIN_PORT
-	LETTUCE_PORT
-	TOMATO_PORT
-	FERTILIZER_PORT
-	// since node can't use this const
+	BAKER_PORT int = 6001
+	TOPPING_PORT int = 6002
+	MOONSEED_PORT int = 6003
+	GRAIN_PORT int = 6004
+	LETTUCE_PORT int = 6005
+	TOMATO_PORT int = 6006
+	FERTILIZER_PORT int = 6007
+	// since node can't use this const but we do need to know of it
 	BUTCHER_PORT = 6050
 )
