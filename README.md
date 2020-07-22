@@ -13,7 +13,7 @@ Check the output, currently it only has data for Soleil bread with the following
 2019/11/26 15:23:46 Got tres meats:<name:"roastbeef" price:1 > meats:<name:"salami" price:2 > lettuces:<name:"iceberg" price:9 > lettuces:<name:"kale" price:4 > tomatoes:<name:"dutch" price:2 > tomatoes:<name:"roma" price:11 > 
 2019/11/26 15:23:46 Got bres bread:<name:"Soleil" amount:2 price:12 grainUsed:200 > 
 ```
-##Setup
+## Setup
 Make sure you have a *nix based terminal when running setup
 ```shell script
 # In root of project
